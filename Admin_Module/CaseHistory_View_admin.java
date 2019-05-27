@@ -33,7 +33,8 @@ public class CaseHistory_View_admin extends javax.swing.JFrame {
         ArrayList<History_Off> userList = new ArrayList<>();
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con2=DriverManager.getConnection("jdbc:mysql://localhost:3306/database","root","root");
+            Connection con2=DriverManager.getConnection("jdbc:mysql://localhost:3306/database","root","toor");
+            Connection con3=DriverManager.getConnection("jdbc:mysql://localhost:3306/database","deepak","gupta");
             String sql="Select * from casehistory" ;
             Statement st = con2.createStatement();
             ResultSet rs = st.executeQuery(sql);
